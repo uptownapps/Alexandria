@@ -37,8 +37,11 @@ extension UIImage {
      */
     public func tinted(tintColor: UIColor) -> UIImage {
         UIGraphicsBeginImageContextWithOptions(size, false, UIScreen.mainScreen().scale)
+        
+        defer { UIGraphicsEndImageContext() }
 
-        let context = UIGraphicsGetCurrentContext()
+        guard let context = UIGraphicsGetCurrentContext(), let cgImage = CGImage else { return self }
+        
         CGContextSaveGState(context)
 
         tintColor.setFill()
@@ -48,18 +51,17 @@ extension UIImage {
 
         CGContextSetBlendMode(context, .Normal)
         let rect = CGRectMake(0.0, 0.0, size.width, size.height)
-        CGContextDrawImage(context, rect, CGImage)
+        CGContextDrawImage(context, rect, cgImage)
 
-        CGContextClipToMask(context, rect, CGImage)
+        CGContextClipToMask(context, rect, cgImage)
         CGContextAddRect(context, rect)
         CGContextDrawPath(context, .Fill)
 
         let coloredImage = UIGraphicsGetImageFromCurrentImageContext()
 
         CGContextRestoreGState(context)
-        UIGraphicsEndImageContext()
 
-        return coloredImage
+        return coloredImage ?? self
     }
     
     /**
@@ -108,7 +110,7 @@ extension UIImage {
         defer {
             UIGraphicsEndImageContext()
         }
-        if let image = UIGraphicsGetImageFromCurrentImageContext().CGImage {
+        if let image = UIGraphicsGetImageFromCurrentImageContext()?.CGImage {
             self.init(CGImage: image)
             return
         }
@@ -132,7 +134,7 @@ extension UIImage {
         defer {
             UIGraphicsEndImageContext()
         }
-        if let image = UIGraphicsGetImageFromCurrentImageContext().CGImage {
+        if let image = UIGraphicsGetImageFromCurrentImageContext()?.CGImage {
             self.init(CGImage: image)
             return
         }

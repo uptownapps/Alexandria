@@ -262,7 +262,7 @@ extension UIView {
         let img = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
-        return img
+        return img ?? UIImage()
     }
     
     /**
@@ -804,8 +804,8 @@ extension UIView {
     
     - author: Richard Turton http://commandshift.co.uk/blog/2016/03/13/better-snapshots/
     */
-    public func addSnapshotOfView(view: UIView, afterUpdates: Bool = false) -> UIView {
-        let snapshot = view.snapshotViewAfterScreenUpdates(afterUpdates)
+    public func addSnapshotOfView(view: UIView, afterUpdates: Bool = false) -> UIView? {
+        guard let snapshot = view.snapshotViewAfterScreenUpdates(afterUpdates) else { return nil }
         self.addSubview(snapshot)
         snapshot.frame = convertRect(view.bounds, fromView: view)
         return snapshot
@@ -823,7 +823,7 @@ extension UIView {
      - author: Richard Turton http://commandshift.co.uk/blog/2016/03/13/better-snapshots/
      */
     public func addSnapshotOfViews(views: [UIView], afterUpdates: Bool = false) -> [UIView] {
-        return views.map { addSnapshotOfView($0, afterUpdates: afterUpdates) }
+        return views.flatMap { addSnapshotOfView($0, afterUpdates: afterUpdates) }
     }
 
 

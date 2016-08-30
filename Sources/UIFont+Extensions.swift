@@ -41,8 +41,9 @@ extension UIFont {
             return
         }
         
-        let provider = CGDataProviderCreateWithCFData(fontData as CFDataRef)
-        guard let font = CGFontCreateWithDataProvider(provider) else { return }
+        guard let provider = CGDataProviderCreateWithCFData(fontData as CFDataRef) else { return }
+        
+        let font = CGFontCreateWithDataProvider(provider)
         
         var error: Unmanaged<CFErrorRef>?
         guard !CTFontManagerRegisterGraphicsFont(font, &error) else {

@@ -213,14 +213,14 @@ public extension UIImage {
             
             UIGraphicsBeginImageContextWithOptions(size, false, screenScale)
             
-            guard let effectInContext = UIGraphicsGetCurrentContext() else {
+            guard let effectInContext = UIGraphicsGetCurrentContext(), let cgImage = self.CGImage else {
                 UIGraphicsEndImageContext()
                 return self
             }
             
             CGContextScaleCTM(effectInContext, 1.0, -1.0)
             CGContextTranslateCTM(effectInContext, 0, -size.height)
-            CGContextDrawImage(effectInContext, imageRect, self.CGImage)
+            CGContextDrawImage(effectInContext, imageRect, cgImage)
             
             var effectInBuffer = createEffectBuffer(effectInContext)
 
@@ -290,13 +290,13 @@ public extension UIImage {
             }
             
             if !effectImageBuffersAreSwapped {
-                effectImage = UIGraphicsGetImageFromCurrentImageContext()
+                effectImage = UIGraphicsGetImageFromCurrentImageContext() ?? UIImage()
             }
             
             UIGraphicsEndImageContext()
             
             if effectImageBuffersAreSwapped {
-                effectImage = UIGraphicsGetImageFromCurrentImageContext()
+                effectImage = UIGraphicsGetImageFromCurrentImageContext() ?? UIImage()
             }
             
             UIGraphicsEndImageContext()
@@ -304,29 +304,35 @@ public extension UIImage {
         
         // Set up output context.
         UIGraphicsBeginImageContextWithOptions(size, false, screenScale)
-        let outputContext = UIGraphicsGetCurrentContext()
-        CGContextScaleCTM(outputContext, 1.0, -1.0)
-        CGContextTranslateCTM(outputContext, 0, -size.height)
         
-        // Draw base image.
-        CGContextDrawImage(outputContext, imageRect, self.CGImage)
-        
-        // Draw effect image.
-        if hasBlur {
-            CGContextSaveGState(outputContext)
-            if let image = maskImage {
-                CGContextClipToMask(outputContext, imageRect, image.CGImage);
+        if let outputContext = UIGraphicsGetCurrentContext() {
+            CGContextScaleCTM(outputContext, 1.0, -1.0)
+            CGContextTranslateCTM(outputContext, 0, -size.height)
+            
+            // Draw base image.
+            if let cgImage = self.CGImage {
+                CGContextDrawImage(outputContext, imageRect, cgImage)
             }
-            CGContextDrawImage(outputContext, imageRect, effectImage.CGImage)
-            CGContextRestoreGState(outputContext)
-        }
-        
-        // Add in color tint.
-        if let color = tintColor {
-            CGContextSaveGState(outputContext)
-            CGContextSetFillColorWithColor(outputContext, color.CGColor)
-            CGContextFillRect(outputContext, imageRect)
-            CGContextRestoreGState(outputContext)
+            
+            // Draw effect image.
+            if hasBlur {
+                CGContextSaveGState(outputContext)
+                if let image = maskImage?.CGImage {
+                    CGContextClipToMask(outputContext, imageRect, image)
+                }
+                if let effectImage = effectImage.CGImage {
+                    CGContextDrawImage(outputContext, imageRect, effectImage)
+                }
+                CGContextRestoreGState(outputContext)
+            }
+            
+            // Add in color tint.
+            if let color = tintColor {
+                CGContextSaveGState(outputContext)
+                CGContextSetFillColorWithColor(outputContext, color.CGColor)
+                CGContextFillRect(outputContext, imageRect)
+                CGContextRestoreGState(outputContext)
+            }
         }
 
         // Output image is ready.
