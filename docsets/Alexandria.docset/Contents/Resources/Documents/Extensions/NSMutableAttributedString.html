@@ -1,0 +1,1795 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NSMutableAttributedString Extension Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Extension/NSMutableAttributedString" class="dashAnchor"></a>
+    <a title="NSMutableAttributedString Extension Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Alexandria Docs</a> (92% documented)</p>
+        <p class="header-right"><a href="https://github.com/ovenbits/Alexandria"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fovenbits%2Egithub%2Eio%2Fdocsets%2FAlexandria%2Exml"><img src="../img/dash.png"/>Install in Dash</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Alexandria Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        NSMutableAttributedString Extension Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CALayer.html">CALayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CAMediaTimingFunction.html">CAMediaTimingFunction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CGAffineTransform.html">CGAffineTransform</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CGContext.html">CGContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CGFloat.html">CGFloat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CGPoint.html">CGPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CGRect.html">CGRect</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CharacterSet.html">CharacterSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Collection.html">Collection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Comparable.html">Comparable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Date/TimeFormat.html">– TimeFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Dictionary.html">Dictionary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Double.html">Double</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Float.html">Float</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int.html">Int</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/MutableCollection.html">MutableCollection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSAttributedString.html">NSAttributedString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSMutableAttributedString.html">NSMutableAttributedString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSMutableCharacterSet.html">NSMutableCharacterSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSObject.html">NSObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Optional.html">Optional</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/SKProduct.html">SKProduct</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIAlertController.html">UIAlertController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIButton.html">UIButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UICollectionView.html">UICollectionView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIColor.html">UIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIColor/Model.html">– Model</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIControl.html">UIControl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIFont.html">UIFont</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIFont/Extension.html">– Extension</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIGestureRecognizer.html">UIGestureRecognizer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImage.html">UIImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIScreen.html">UIScreen</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIScrollView.html">UIScrollView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UISplitViewController.html">UISplitViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UITableView.html">UITableView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIView.html">UIView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIViewController.html">UIViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/URL.html">URL</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:F10AlexandriaoP1rFSdSd">%(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:F10AlexandriaoP1rFSfSf">%(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:F10AlexandriaoP1rFV12CoreGraphics7CGFloatS1_">%(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:F10Alexandriaoi1mFTVSC7CGPointS0__S0_">*(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:F10Alexandriaoi2meFTRVSC7CGPointS0__T_">*=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:F10Alexandriaoi1pFTCSo25NSMutableAttributedStringCSo18NSAttributedString_S0_">+(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:F10Alexandriaoi1pFTV10Foundation3URLSS_S1_">+(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:F10Alexandriaoi1pFTVSC7CGPointS0__S0_">+(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/+(_:_:).html">+(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:F10Alexandriaoi2peFTCSo25NSMutableAttributedStringCSo18NSAttributedString_T_">+=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:F10Alexandriaoi2peFTRVSC7CGPointS0__T_">+=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/+=(_:_:).html">+=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:F10Alexandriaoi1sFTVSC7CGPointS0__S0_">-(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:F10Alexandriaoi2seFTRVSC7CGPointS0__T_">-=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:F10Alexandriaoi1dFTVSC7CGPointS0__S0_">/(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:F10Alexandriaoi2deFTRVSC7CGPointS0__T_">/=(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/Customizable.html">Customizable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Subscripts.html">Subscripts</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Subscripts.html#/s:iE10AlexandriaSS9subscriptFGVs11ClosedRangeSi_SS">subscript(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Subscripts.html#/s:iE10AlexandriaSS9subscriptFGVs5RangeSi_SS">subscript(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Subscripts.html#/s:iE10AlexandriaSS9subscriptFSiSS">subscript(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Subscripts.html#/s:ie10AlexandriaRxs10Collectionwx5IndexzWx7IndicesPs8Sequence8Iterator7Element_rS0_9subscriptFT4safewxS1__GSqWx8IteratorS5___">subscript(safe:)</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>NSMutableAttributedString</h1>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10AlexandriaCSo25NSMutableAttributedString14trimCharactersFT2inV10Foundation12CharacterSet_T_"></a>
+                    <a name="//apple_ref/swift/Method/trimCharacters(in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10AlexandriaCSo25NSMutableAttributedString14trimCharactersFT2inV10Foundation12CharacterSet_T_">trimCharacters(in:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Modifies this instance of the string to remove characters from a given character set from
+the beginning and end of the string.</p>
+
+<p>See <a href="http://panupan.com/2012/06/04/trim-leading-and-trailing-whitespaces-from-nsmutableattributedstring/">http://panupan.com/2012/06/04/trim-leading-and-trailing-whitespaces-from-nsmutableattributedstring/</a></p>
+
+<ul>
+<li>Parameters:
+
+<ul>
+<li>charSet: The character set with which to remove characters.</li>
+</ul></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">trimCharacters</span><span class="p">(</span><span class="k">in</span> <span class="nv">set</span><span class="p">:</span> <span class="kt">CharacterSet</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>charSet</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The character set with which to remove characters.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10AlexandriaCSo25NSMutableAttributedString4fontFCSo6UIFontDS0_"></a>
+                    <a name="//apple_ref/swift/Method/font(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10AlexandriaCSo25NSMutableAttributedString4fontFCSo6UIFontDS0_">font(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Applies a font to the entire string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">font</span><span class="p">(</span><span class="n">_</span> <span class="nv">font</span><span class="p">:</span> <span class="kt">UIFont</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>font</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The font.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10AlexandriaCSo25NSMutableAttributedString4fontFT4nameSS4sizeV12CoreGraphics7CGFloat_DS0_"></a>
+                    <a name="//apple_ref/swift/Method/font(name:size:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10AlexandriaCSo25NSMutableAttributedString4fontFT4nameSS4sizeV12CoreGraphics7CGFloat_DS0_">font(name:size:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Applies a font to the entire string.</p>
+
+<p>Note: If the specified font name cannot be loaded, this method will fallback to the system font at the specified size.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">font</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">size</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>name</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The font name.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>size</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The font size.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10AlexandriaCSo25NSMutableAttributedString9alignmentFOSC15NSTextAlignmentDS0_"></a>
+                    <a name="//apple_ref/swift/Method/alignment(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10AlexandriaCSo25NSMutableAttributedString9alignmentFOSC15NSTextAlignmentDS0_">alignment(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Applies a text alignment to the entire string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">alignment</span><span class="p">(</span><span class="n">_</span> <span class="nv">alignment</span><span class="p">:</span> <span class="kt">NSTextAlignment</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>alignment</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The text alignment.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10AlexandriaCSo25NSMutableAttributedString11lineSpacingFV12CoreGraphics7CGFloatDS0_"></a>
+                    <a name="//apple_ref/swift/Method/lineSpacing(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10AlexandriaCSo25NSMutableAttributedString11lineSpacingFV12CoreGraphics7CGFloatDS0_">lineSpacing(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Applies line spacing to the entire string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">lineSpacing</span><span class="p">(</span><span class="n">_</span> <span class="nv">lineSpacing</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>lineSpacing</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The line spacing amount.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10AlexandriaCSo25NSMutableAttributedString16paragraphSpacingFV12CoreGraphics7CGFloatDS0_"></a>
+                    <a name="//apple_ref/swift/Method/paragraphSpacing(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10AlexandriaCSo25NSMutableAttributedString16paragraphSpacingFV12CoreGraphics7CGFloatDS0_">paragraphSpacing(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Applies paragraph spacing to the entire string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">paragraphSpacing</span><span class="p">(</span><span class="n">_</span> <span class="nv">paragraphSpacing</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>paragraphSpacing</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The paragraph spacing amount.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10AlexandriaCSo25NSMutableAttributedString9lineBreakFOSC15NSLineBreakModeDS0_"></a>
+                    <a name="//apple_ref/swift/Method/lineBreak(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10AlexandriaCSo25NSMutableAttributedString9lineBreakFOSC15NSLineBreakModeDS0_">lineBreak(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Applies a line break mode to the entire string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">lineBreak</span><span class="p">(</span><span class="n">_</span> <span class="nv">mode</span><span class="p">:</span> <span class="kt">NSLineBreakMode</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>mode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The line break mode.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10AlexandriaCSo25NSMutableAttributedString10lineHeightFT8multipleV12CoreGraphics7CGFloat_DS0_"></a>
+                    <a name="//apple_ref/swift/Method/lineHeight(multiple:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10AlexandriaCSo25NSMutableAttributedString10lineHeightFT8multipleV12CoreGraphics7CGFloat_DS0_">lineHeight(multiple:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Applies a line height multiplier to the entire string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">lineHeight</span><span class="p">(</span><span class="nv">multiple</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>multiple</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The line height multiplier.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10AlexandriaCSo25NSMutableAttributedString19firstLineHeadIndentFV12CoreGraphics7CGFloatDS0_"></a>
+                    <a name="//apple_ref/swift/Method/firstLineHeadIndent(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10AlexandriaCSo25NSMutableAttributedString19firstLineHeadIndentFV12CoreGraphics7CGFloatDS0_">firstLineHeadIndent(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Applies a first line head indent to the string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">firstLineHeadIndent</span><span class="p">(</span><span class="n">_</span> <span class="nv">indent</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>indent</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The first line head indent amount.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10AlexandriaCSo25NSMutableAttributedString10headIndentFV12CoreGraphics7CGFloatDS0_"></a>
+                    <a name="//apple_ref/swift/Method/headIndent(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10AlexandriaCSo25NSMutableAttributedString10headIndentFV12CoreGraphics7CGFloatDS0_">headIndent(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Applies a head indent to the string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">headIndent</span><span class="p">(</span><span class="n">_</span> <span class="nv">indent</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>indent</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The head indent amount.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10AlexandriaCSo25NSMutableAttributedString10tailIndentFV12CoreGraphics7CGFloatDS0_"></a>
+                    <a name="//apple_ref/swift/Method/tailIndent(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10AlexandriaCSo25NSMutableAttributedString10tailIndentFV12CoreGraphics7CGFloatDS0_">tailIndent(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Applies a tail indent to the string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">tailIndent</span><span class="p">(</span><span class="n">_</span> <span class="nv">indent</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>indent</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The tail indent amount.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10AlexandriaCSo25NSMutableAttributedString17minimumLineHeightFV12CoreGraphics7CGFloatDS0_"></a>
+                    <a name="//apple_ref/swift/Method/minimumLineHeight(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10AlexandriaCSo25NSMutableAttributedString17minimumLineHeightFV12CoreGraphics7CGFloatDS0_">minimumLineHeight(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Applies a minimum line height to the entire string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">minimumLineHeight</span><span class="p">(</span><span class="n">_</span> <span class="nv">height</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>height</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The minimum line height.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10AlexandriaCSo25NSMutableAttributedString17maximumLineHeightFV12CoreGraphics7CGFloatDS0_"></a>
+                    <a name="//apple_ref/swift/Method/maximumLineHeight(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10AlexandriaCSo25NSMutableAttributedString17maximumLineHeightFV12CoreGraphics7CGFloatDS0_">maximumLineHeight(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Applies a maximum line height to the entire string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">maximumLineHeight</span><span class="p">(</span><span class="n">_</span> <span class="nv">height</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>height</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The maximum line height.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10AlexandriaCSo25NSMutableAttributedString20baseWritingDirectionFOSC18NSWritingDirectionDS0_"></a>
+                    <a name="//apple_ref/swift/Method/baseWritingDirection(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10AlexandriaCSo25NSMutableAttributedString20baseWritingDirectionFOSC18NSWritingDirectionDS0_">baseWritingDirection(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Applies a base writing direction to the entire string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">baseWritingDirection</span><span class="p">(</span><span class="n">_</span> <span class="nv">direction</span><span class="p">:</span> <span class="kt">NSWritingDirection</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>direction</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The base writing direction.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10AlexandriaCSo25NSMutableAttributedString22paragraphSpacingBeforeFV12CoreGraphics7CGFloatDS0_"></a>
+                    <a name="//apple_ref/swift/Method/paragraphSpacingBefore(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10AlexandriaCSo25NSMutableAttributedString22paragraphSpacingBeforeFV12CoreGraphics7CGFloatDS0_">paragraphSpacingBefore(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Applies a paragraph spacing before amount to the string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">paragraphSpacingBefore</span><span class="p">(</span><span class="n">_</span> <span class="nv">spacing</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>spacing</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The distance between the paragraph’s top and the beginning of its text content.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10AlexandriaCSo25NSMutableAttributedString5colorFTCSo7UIColor5alphaV12CoreGraphics7CGFloat_DS0_"></a>
+                    <a name="//apple_ref/swift/Method/color(_:alpha:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10AlexandriaCSo25NSMutableAttributedString5colorFTCSo7UIColor5alphaV12CoreGraphics7CGFloat_DS0_">color(_:alpha:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Applies the given color over the entire string, as the foreground color.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">color</span><span class="p">(</span><span class="n">_</span> <span class="nv">color</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">,</span> <span class="nv">alpha</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>color</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The color to apply.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10AlexandriaCSo25NSMutableAttributedString5colorFT3redV12CoreGraphics7CGFloat5greenS2_4blueS2_5alphaS2__DS0_"></a>
+                    <a name="//apple_ref/swift/Method/color(red:green:blue:alpha:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10AlexandriaCSo25NSMutableAttributedString5colorFT3redV12CoreGraphics7CGFloat5greenS2_4blueS2_5alphaS2__DS0_">color(red:green:blue:alpha:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Applies the given color over the entire string, as the foreground color.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">color</span><span class="p">(</span><span class="nv">red</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">green</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">blue</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">alpha</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>color</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The color to apply.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10AlexandriaCSo25NSMutableAttributedString5colorFT5whiteV12CoreGraphics7CGFloat5alphaS2__DS0_"></a>
+                    <a name="//apple_ref/swift/Method/color(white:alpha:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10AlexandriaCSo25NSMutableAttributedString5colorFT5whiteV12CoreGraphics7CGFloat5alphaS2__DS0_">color(white:alpha:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Applies the given color over the entire string, as the foreground color.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">color</span><span class="p">(</span><span class="nv">white</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">alpha</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>color</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The color to apply.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10AlexandriaCSo25NSMutableAttributedString5colorFTVs6UInt325alphaV12CoreGraphics7CGFloat_DS0_"></a>
+                    <a name="//apple_ref/swift/Method/color(_:alpha:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10AlexandriaCSo25NSMutableAttributedString5colorFTVs6UInt325alphaV12CoreGraphics7CGFloat_DS0_">color(_:alpha:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Applies the given color over the entire string, as the foreground color.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">color</span><span class="p">(</span><span class="n">_</span> <span class="nv">hex</span><span class="p">:</span> <span class="kt">UInt32</span><span class="p">,</span> <span class="nv">alpha</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>color</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The color to apply.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10AlexandriaCSo25NSMutableAttributedString9underlineFT5styleOSC16NSUnderlineStyle5colorGSqCSo7UIColor__DS0_"></a>
+                    <a name="//apple_ref/swift/Method/underline(style:color:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10AlexandriaCSo25NSMutableAttributedString9underlineFT5styleOSC16NSUnderlineStyle5colorGSqCSo7UIColor__DS0_">underline(style:color:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Applies a single underline under the entire string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">underline</span><span class="p">(</span><span class="nv">style</span><span class="p">:</span> <span class="kt">NSUnderlineStyle</span> <span class="o">=</span> <span class="o">.</span><span class="n">styleSingle</span><span class="p">,</span> <span class="nv">color</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>style</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>NSUnderlineStyle</code> to apply. Defaults to <code>.styleSingle</code>.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10AlexandriaCSo25NSMutableAttributedString4kernFV12CoreGraphics7CGFloatDS0_"></a>
+                    <a name="//apple_ref/swift/Method/kern(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10AlexandriaCSo25NSMutableAttributedString4kernFV12CoreGraphics7CGFloatDS0_">kern(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Applies a kern (spacing) value to the entire string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">kern</span><span class="p">(</span><span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The space between each character in the string.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10AlexandriaCSo25NSMutableAttributedString13strikethroughFT5styleOSC16NSUnderlineStyle5colorGSqCSo7UIColor__DS0_"></a>
+                    <a name="//apple_ref/swift/Method/strikethrough(style:color:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10AlexandriaCSo25NSMutableAttributedString13strikethroughFT5styleOSC16NSUnderlineStyle5colorGSqCSo7UIColor__DS0_">strikethrough(style:color:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Applies a strikethrough to the entire string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">strikethrough</span><span class="p">(</span><span class="nv">style</span><span class="p">:</span> <span class="kt">NSUnderlineStyle</span> <span class="o">=</span> <span class="o">.</span><span class="n">styleSingle</span><span class="p">,</span> <span class="nv">color</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>style</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>NSUnderlineStyle</code> to apply. Defaults to <code>.styleSingle</code>.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>color</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The underline color. Defaults to the color of the text.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10AlexandriaCSo25NSMutableAttributedString6strokeFT5colorCSo7UIColor5widthV12CoreGraphics7CGFloat_DS0_"></a>
+                    <a name="//apple_ref/swift/Method/stroke(color:width:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10AlexandriaCSo25NSMutableAttributedString6strokeFT5colorCSo7UIColor5widthV12CoreGraphics7CGFloat_DS0_">stroke(color:width:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Applies a stroke to the entire string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">stroke</span><span class="p">(</span><span class="nv">color</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">,</span> <span class="nv">width</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>color</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The stroke color.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>width</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The stroke width.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10AlexandriaCSo25NSMutableAttributedString6shadowFT5colorCSo7UIColor6radiusV12CoreGraphics7CGFloat6offsetVSC6CGSize_DS0_"></a>
+                    <a name="//apple_ref/swift/Method/shadow(color:radius:offset:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10AlexandriaCSo25NSMutableAttributedString6shadowFT5colorCSo7UIColor6radiusV12CoreGraphics7CGFloat6offsetVSC6CGSize_DS0_">shadow(color:radius:offset:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Applies a shadow to the entire string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">shadow</span><span class="p">(</span><span class="nv">color</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">,</span> <span class="nv">radius</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>color</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The shadow color.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>radius</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The shadow blur radius.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>offset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The shadow offset.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10AlexandriaCSo25NSMutableAttributedString15backgroundColorFTCSo7UIColor5alphaV12CoreGraphics7CGFloat_DS0_"></a>
+                    <a name="//apple_ref/swift/Method/backgroundColor(_:alpha:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10AlexandriaCSo25NSMutableAttributedString15backgroundColorFTCSo7UIColor5alphaV12CoreGraphics7CGFloat_DS0_">backgroundColor(_:alpha:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Applies a background color to the entire string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">backgroundColor</span><span class="p">(</span><span class="n">_</span> <span class="nv">color</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">,</span> <span class="nv">alpha</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>color</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The color to apply.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10AlexandriaCSo25NSMutableAttributedString15backgroundColorFT3redV12CoreGraphics7CGFloat5greenS2_4blueS2_5alphaS2__DS0_"></a>
+                    <a name="//apple_ref/swift/Method/backgroundColor(red:green:blue:alpha:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10AlexandriaCSo25NSMutableAttributedString15backgroundColorFT3redV12CoreGraphics7CGFloat5greenS2_4blueS2_5alphaS2__DS0_">backgroundColor(red:green:blue:alpha:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Applies a background color to the entire string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">backgroundColor</span><span class="p">(</span><span class="nv">red</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">green</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">blue</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">alpha</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>red</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The red color component.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>green</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The green color component.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>blue</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The blue color component.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>alpha</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The alpha component.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10AlexandriaCSo25NSMutableAttributedString15backgroundColorFT5whiteV12CoreGraphics7CGFloat5alphaS2__DS0_"></a>
+                    <a name="//apple_ref/swift/Method/backgroundColor(white:alpha:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10AlexandriaCSo25NSMutableAttributedString15backgroundColorFT5whiteV12CoreGraphics7CGFloat5alphaS2__DS0_">backgroundColor(white:alpha:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Applies a background color to the entire string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">backgroundColor</span><span class="p">(</span><span class="nv">white</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">alpha</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>white</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The white color component.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>alpha</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The alpha component.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10AlexandriaCSo25NSMutableAttributedString15backgroundColorFTVs6UInt325alphaV12CoreGraphics7CGFloat_DS0_"></a>
+                    <a name="//apple_ref/swift/Method/backgroundColor(_:alpha:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10AlexandriaCSo25NSMutableAttributedString15backgroundColorFTVs6UInt325alphaV12CoreGraphics7CGFloat_DS0_">backgroundColor(_:alpha:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Applies a background color to the entire string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">backgroundColor</span><span class="p">(</span><span class="n">_</span> <span class="nv">hex</span><span class="p">:</span> <span class="kt">UInt32</span><span class="p">,</span> <span class="nv">alpha</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>hex</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The hex color value.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>alpha</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The alpha component.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10AlexandriaCSo25NSMutableAttributedString14baselineOffsetFSfDS0_"></a>
+                    <a name="//apple_ref/swift/Method/baselineOffset(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10AlexandriaCSo25NSMutableAttributedString14baselineOffsetFSfDS0_">baselineOffset(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Applies a baseline offset to the entire string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">baselineOffset</span><span class="p">(</span><span class="n">_</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>offset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The offset value.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="https://ovenbits.com" target="_blank" rel="external">Oven Bits, LLC</a>. All rights reserved. (Last updated: 2016-11-12)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

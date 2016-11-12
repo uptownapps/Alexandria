@@ -1,0 +1,159 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/travis/build/ovenbits/Alexandria/Sources/CoreGraphics+Extensions.swift",
+      "line": 72,
+      "symbol": "+(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ovenbits/Alexandria/Sources/CoreGraphics+Extensions.swift",
+      "line": 76,
+      "symbol": "+=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ovenbits/Alexandria/Sources/CoreGraphics+Extensions.swift",
+      "line": 80,
+      "symbol": "-(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ovenbits/Alexandria/Sources/CoreGraphics+Extensions.swift",
+      "line": 84,
+      "symbol": "-=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ovenbits/Alexandria/Sources/CoreGraphics+Extensions.swift",
+      "line": 88,
+      "symbol": "*(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ovenbits/Alexandria/Sources/CoreGraphics+Extensions.swift",
+      "line": 92,
+      "symbol": "*=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ovenbits/Alexandria/Sources/CoreGraphics+Extensions.swift",
+      "line": 96,
+      "symbol": "/(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ovenbits/Alexandria/Sources/CoreGraphics+Extensions.swift",
+      "line": 100,
+      "symbol": "/=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ovenbits/Alexandria/Sources/Dictionary+Extensions.swift",
+      "line": 60,
+      "symbol": "+(_:_:).Key",
+      "symbol_kind": "source.lang.swift.decl.generic_type_param",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ovenbits/Alexandria/Sources/Dictionary+Extensions.swift",
+      "line": 70,
+      "symbol": "+=(_:_:).Key",
+      "symbol_kind": "source.lang.swift.decl.generic_type_param",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ovenbits/Alexandria/Sources/NSAttributedString+Extensions.swift",
+      "line": 504,
+      "symbol": "+(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ovenbits/Alexandria/Sources/NSAttributedString+Extensions.swift",
+      "line": 510,
+      "symbol": "+=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ovenbits/Alexandria/Sources/Operators.swift",
+      "line": 30,
+      "symbol": "%(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ovenbits/Alexandria/Sources/Operators.swift",
+      "line": 34,
+      "symbol": "%(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ovenbits/Alexandria/Sources/Operators.swift",
+      "line": 38,
+      "symbol": "%(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ovenbits/Alexandria/Sources/String+Extensions.swift",
+      "line": 241,
+      "symbol": "String.truncate(to:trailing:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ovenbits/Alexandria/Sources/UIControl+Actionable.swift",
+      "line": 87,
+      "symbol": "UIControl.handleAction()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ovenbits/Alexandria/Sources/UIFont+Extensions.swift",
+      "line": 32,
+      "symbol": "UIFont.Extension",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ovenbits/Alexandria/Sources/UIFont+Extensions.swift",
+      "line": 33,
+      "symbol": "UIFont.Extension.otf",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ovenbits/Alexandria/Sources/UIFont+Extensions.swift",
+      "line": 34,
+      "symbol": "UIFont.Extension.ttf",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ovenbits/Alexandria/Sources/UIFont+Extensions.swift",
+      "line": 35,
+      "symbol": "UIFont.Extension.woff",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/ovenbits/Alexandria/Sources/UIFont+Extensions.swift",
+      "line": 36,
+      "symbol": "UIFont.Extension.custom",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/travis/build/ovenbits/Alexandria"
+}
