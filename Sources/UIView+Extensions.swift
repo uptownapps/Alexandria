@@ -261,7 +261,7 @@ extension UIView {
                      _ otherAttribute: NSLayoutAttribute,
                      times multiplier: CGFloat = 1,
                         plus constant: CGFloat = 0,
-                  atPriority priority: UILayoutPriority = UILayoutPriorityRequired,
+                  atPriority priority: UILayoutPriority = UILayoutPriority.required,
                            identifier: String? = nil) -> NSLayoutConstraint
     {
         translatesAutoresizingMaskIntoConstraints = false
@@ -302,7 +302,7 @@ extension UIView {
                      _ otherAttribute: NSLayoutAttribute,
                      times multiplier: CGFloat = 1,
                         plus constant: CGFloat = 0,
-                  atPriority priority: UILayoutPriority = UILayoutPriorityRequired,
+                  atPriority priority: UILayoutPriority = UILayoutPriority.required,
                            identifier: String? = nil) -> NSLayoutConstraint
     {
         translatesAutoresizingMaskIntoConstraints = false
@@ -339,7 +339,7 @@ extension UIView {
                            _ relation: NSLayoutRelation = .equal,
                           to constant: CGFloat,
                      times multiplier: CGFloat = 1,
-                  atPriority priority: UILayoutPriority = UILayoutPriorityRequired,
+                  atPriority priority: UILayoutPriority = UILayoutPriority.required,
                            identifier: String? = nil) -> NSLayoutConstraint
     {
         translatesAutoresizingMaskIntoConstraints = false
@@ -397,7 +397,7 @@ extension UIView {
     public func constrainWidth(to value: CGFloat,
                              _ relation: NSLayoutRelation = .equal,
                        times multiplier: CGFloat = 1,
-                    atPriority priority: UILayoutPriority = UILayoutPriorityRequired) -> Self
+                    atPriority priority: UILayoutPriority = UILayoutPriority.required) -> Self
     {
         constrain(.width, relation, to: value, times: multiplier, atPriority: priority)
         return self
@@ -417,7 +417,7 @@ extension UIView {
     public func constrainHeight(to value: CGFloat,
                               _ relation: NSLayoutRelation = .equal,
                         times multiplier: CGFloat = 1,
-                     atPriority priority: UILayoutPriority = UILayoutPriorityRequired) -> Self
+                     atPriority priority: UILayoutPriority = UILayoutPriority.required) -> Self
     {
         constrain(.height, relation, to: value, times: multiplier, atPriority: priority)
         return self
@@ -441,7 +441,7 @@ extension UIView {
                               relation: NSLayoutRelation = .equal,
                       times multiplier: CGFloat = 1,
                          plus constant: CGFloat = 0,
-                   atPriority priority: UILayoutPriority = UILayoutPriorityRequired) -> Self
+                   atPriority priority: UILayoutPriority = UILayoutPriority.required) -> Self
     {
         constrain(.width, relation, to: view, attribute, times: multiplier, plus: constant, atPriority: priority)
         return self
@@ -465,7 +465,7 @@ extension UIView {
                                relation: NSLayoutRelation = .equal,
                        times multiplier: CGFloat = 1,
                           plus constant: CGFloat = 0,
-                    atPriority priority: UILayoutPriority = UILayoutPriorityRequired) -> Self
+                    atPriority priority: UILayoutPriority = UILayoutPriority.required) -> Self
     {
         constrain(.height, relation, to: view, attribute, times: multiplier, plus: constant, atPriority: priority)
         return self
@@ -489,7 +489,7 @@ extension UIView {
                        relation: NSLayoutRelation = .equal,
                times multiplier: CGFloat = 1,
                   plus constant: CGFloat = 0,
-            atPriority priority: UILayoutPriority = UILayoutPriorityRequired) -> Self
+            atPriority priority: UILayoutPriority = UILayoutPriority.required) -> Self
     {
         constrain(.left, relation, to: view, attribute, times: multiplier, plus: constant, atPriority: priority)
         return self
@@ -513,7 +513,7 @@ extension UIView {
                         relation: NSLayoutRelation = .equal,
                 times multiplier: CGFloat = 1,
                    plus constant: CGFloat = 0,
-             atPriority priority: UILayoutPriority = UILayoutPriorityRequired) -> Self
+             atPriority priority: UILayoutPriority = UILayoutPriority.required) -> Self
     {
         constrain(.right, relation, to: view, attribute, times: multiplier, plus: constant, atPriority: priority)
         return self
@@ -537,7 +537,7 @@ extension UIView {
                       relation: NSLayoutRelation = .equal,
               times multiplier: CGFloat = 1,
                  plus constant: CGFloat = 0,
-           atPriority priority: UILayoutPriority = UILayoutPriorityRequired) -> Self
+           atPriority priority: UILayoutPriority = UILayoutPriority.required) -> Self
     {
         constrain(.top, relation, to: view, attribute, times: multiplier, plus: constant, atPriority: priority)
         return self
@@ -561,7 +561,7 @@ extension UIView {
                          relation: NSLayoutRelation = .equal,
                  times multiplier: CGFloat = 1,
                     plus constant: CGFloat = 0,
-              atPriority priority: UILayoutPriority = UILayoutPriorityRequired) -> Self
+              atPriority priority: UILayoutPriority = UILayoutPriority.required) -> Self
     {
         constrain(.bottom, relation, to: view, attribute, times: multiplier, plus: constant, atPriority: priority)
         return self
@@ -585,7 +585,7 @@ extension UIView {
                           relation: NSLayoutRelation = .equal,
                   times multiplier: CGFloat = 1,
                      plus constant: CGFloat = 0,
-               atPriority priority: UILayoutPriority = UILayoutPriorityRequired) -> Self
+               atPriority priority: UILayoutPriority = UILayoutPriority.required) -> Self
     {
         constrain(.leading, relation, to: view, attribute, times: multiplier, plus: constant, atPriority: priority)
         return self
@@ -609,7 +609,7 @@ extension UIView {
                            relation: NSLayoutRelation = .equal,
                    times multiplier: CGFloat = 1,
                       plus constant: CGFloat = 0,
-                atPriority priority: UILayoutPriority = UILayoutPriorityRequired) -> Self
+                atPriority priority: UILayoutPriority = UILayoutPriority.required) -> Self
     {
         constrain(.trailing, relation, to: view, attribute, times: multiplier, plus: constant, atPriority: priority)
         return self
@@ -633,7 +633,7 @@ extension UIView {
                           relation: NSLayoutRelation = .equal,
                   times multiplier: CGFloat = 1,
                      plus constant: CGFloat = 0,
-               atPriority priority: UILayoutPriority = UILayoutPriorityRequired) -> Self
+               atPriority priority: UILayoutPriority = UILayoutPriority.required) -> Self
     {
         constrain(.centerX, relation, to: view, attribute, times: multiplier, plus: constant, atPriority: priority)
         return self
@@ -657,7 +657,7 @@ extension UIView {
                           relation: NSLayoutRelation = .equal,
                   times multiplier: CGFloat = 1,
                      plus constant: CGFloat = 0,
-               atPriority priority: UILayoutPriority = UILayoutPriorityRequired) -> Self
+               atPriority priority: UILayoutPriority = UILayoutPriority.required) -> Self
     {
         constrain(.centerY, relation, to: view, attribute, times: multiplier, plus: constant, atPriority: priority)
         return self
@@ -669,7 +669,7 @@ extension UIView {
      - parameter axes: The axes on which to constrain self (variadic).
      - parameter priority: The layout priority for content hugging and compression (optional, defaults to `UILayoutPriorityRequired`)
      */
-    public func constrainSize(toFit axes: UILayoutConstraintAxis..., priority: UILayoutPriority = UILayoutPriorityRequired) {
+    public func constrainSize(toFit axes: UILayoutConstraintAxis..., priority: UILayoutPriority = UILayoutPriority.required) {
         axes.forEach {
             setContentHuggingPriority(priority, for: $0)
             setContentCompressionResistancePriority(priority, for: $0)
@@ -831,7 +831,7 @@ extension UIView {
                              relation: NSLayoutRelation = .equal,
                              times multiplier: CGFloat = 1,
                                    plus constant: CGFloat = 0,
-                                        atPriority priority: UILayoutPriority = UILayoutPriorityRequired) -> Self
+                                        atPriority priority: UILayoutPriority = UILayoutPriority.required) -> Self
     {
         constrain(.left, relation, toSupport: support, attribute, times: multiplier, plus: constant, atPriority: priority)
         return self
@@ -856,7 +856,7 @@ extension UIView {
                               relation: NSLayoutRelation = .equal,
                               times multiplier: CGFloat = 1,
                                     plus constant: CGFloat = 0,
-                                         atPriority priority: UILayoutPriority = UILayoutPriorityRequired) -> Self
+                                         atPriority priority: UILayoutPriority = UILayoutPriority.required) -> Self
     {
         constrain(.right, relation, toSupport: support, attribute, times: multiplier, plus: constant, atPriority: priority)
         return self
@@ -881,7 +881,7 @@ extension UIView {
                             relation: NSLayoutRelation = .equal,
                             times multiplier: CGFloat = 1,
                                   plus constant: CGFloat = 0,
-                                       atPriority priority: UILayoutPriority = UILayoutPriorityRequired) -> Self
+                                       atPriority priority: UILayoutPriority = UILayoutPriority.required) -> Self
     {
         constrain(.top, relation, toSupport: support, attribute, times: multiplier, plus: constant, atPriority: priority)
         return self
@@ -906,7 +906,7 @@ extension UIView {
                                relation: NSLayoutRelation = .equal,
                                times multiplier: CGFloat = 1,
                                      plus constant: CGFloat = 0,
-                                          atPriority priority: UILayoutPriority = UILayoutPriorityRequired) -> Self
+                                          atPriority priority: UILayoutPriority = UILayoutPriority.required) -> Self
     {
         constrain(.bottom, relation, toSupport: support, attribute, times: multiplier, plus: constant, atPriority: priority)
         return self
@@ -931,7 +931,7 @@ extension UIView {
                                 relation: NSLayoutRelation = .equal,
                                 times multiplier: CGFloat = 1,
                                       plus constant: CGFloat = 0,
-                                           atPriority priority: UILayoutPriority = UILayoutPriorityRequired) -> Self
+                                           atPriority priority: UILayoutPriority = UILayoutPriority.required) -> Self
     {
         constrain(.leading, relation, toSupport: support, attribute, times: multiplier, plus: constant, atPriority: priority)
         return self
@@ -956,7 +956,7 @@ extension UIView {
                                  relation: NSLayoutRelation = .equal,
                                  times multiplier: CGFloat = 1,
                                        plus constant: CGFloat = 0,
-                                            atPriority priority: UILayoutPriority = UILayoutPriorityRequired) -> Self
+                                            atPriority priority: UILayoutPriority = UILayoutPriority.required) -> Self
     {
         constrain(.trailing, relation, toSupport: support, attribute, times: multiplier, plus: constant, atPriority: priority)
         return self
@@ -981,7 +981,7 @@ extension UIView {
                                 relation: NSLayoutRelation = .equal,
                                 times multiplier: CGFloat = 1,
                                       plus constant: CGFloat = 0,
-                                           atPriority priority: UILayoutPriority = UILayoutPriorityRequired) -> Self
+                                           atPriority priority: UILayoutPriority = UILayoutPriority.required) -> Self
     {
         constrain(.centerX, relation, toSupport: support, attribute, times: multiplier, plus: constant, atPriority: priority)
         return self
@@ -1006,7 +1006,7 @@ extension UIView {
                                 relation: NSLayoutRelation = .equal,
                                 times multiplier: CGFloat = 1,
                                       plus constant: CGFloat = 0,
-                                           atPriority priority: UILayoutPriority = UILayoutPriorityRequired) -> Self
+                                           atPriority priority: UILayoutPriority = UILayoutPriority.required) -> Self
     {
         constrain(.centerY, relation, toSupport: support, attribute, times: multiplier, plus: constant, atPriority: priority)
         return self

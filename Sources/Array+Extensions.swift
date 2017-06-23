@@ -42,7 +42,7 @@ extension Array {
      
      - returns: The array created by applying the transform to this array.
      */
-    public func mapWithIndex<T> (_ f: (Int, Element) -> T) -> [T] {
+    public func mapWithIndex<T> (_ f: ((Int, Element)) -> T) -> [T] {
         return zip(startIndex ..< endIndex, self).map(f)
     }
 

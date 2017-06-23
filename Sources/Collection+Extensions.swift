@@ -59,7 +59,7 @@ public extension Collection {
      
      - returns: A shuffled version of this array.
      */
-    public func shuffled() -> [Generator.Element] {
+    public func shuffled() -> [Iterator.Element] {
         var list = Array(self)
         list.shuffle()
         return list
@@ -78,7 +78,7 @@ public extension MutableCollection where Index == Int, IndexDistance == Int {
         for i in 0 ..< (count - 1) {
             let j = Int(arc4random_uniform(UInt32(count - i))) + i
             guard i != j else { continue }
-            swap(&self[i], &self[j])
+            self.swapAt(i, j)
         }
     }
     
@@ -87,7 +87,7 @@ public extension MutableCollection where Index == Int, IndexDistance == Int {
      
      - returns: A random element from the collection.
      */
-    public func random() -> Generator.Element {        
+    public func random() -> Iterator.Element {        
         let index = Int(arc4random_uniform(UInt32(count)))
         return self[index]
     }
