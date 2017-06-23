@@ -860,6 +860,33 @@ extension UIView {
     }
     
     /**
+     Constrain the left anchor to another anchor.
+     
+     - parameter anchor: The support by which to constrain self.
+     - parameter relation: The layout relation of self (optional, defaults to .Equal).
+     - parameter constant: The constant to use for the constraint (optional, defaults to 0).
+     
+     - returns: self
+     */
+    @available(iOS 9.0, *)
+    @discardableResult
+    public func pinLeftAnchor(to anchor: NSLayoutXAxisAnchor,
+                              relation: NSLayoutRelation = .equal,
+                              constant: CGFloat = 0) -> Self
+    {
+        switch relation {
+        case .equal:
+            leftAnchor.constraint(equalTo: anchor, constant: constant).isActive = true
+        case .greaterThanOrEqual:
+            leftAnchor.constraint(greaterThanOrEqualTo: anchor, constant: constant).isActive = true
+        case .lessThanOrEqual:
+            leftAnchor.constraint(lessThanOrEqualTo: anchor, constant: constant).isActive = true
+        }
+        
+        return self
+    }
+    
+    /**
      Constrain the right constraint of the current view.
      
      - parameter support: The support by which to constrain self.
@@ -881,6 +908,33 @@ extension UIView {
                                          atPriority priority: UILayoutPriority = UILayoutPriority.required) -> Self
     {
         constrain(.right, relation, toSupport: support, attribute, times: multiplier, plus: constant, atPriority: priority)
+        return self
+    }
+    
+    /**
+     Constrain the right anchor to another anchor.
+     
+     - parameter anchor: The support by which to constrain self.
+     - parameter relation: The layout relation of self (optional, defaults to .Equal).
+     - parameter constant: The constant to use for the constraint (optional, defaults to 0).
+     
+     - returns: self
+     */
+    @available(iOS 9.0, *)
+    @discardableResult
+    public func pinRightAnchor(to anchor: NSLayoutXAxisAnchor,
+                              relation: NSLayoutRelation = .equal,
+                              constant: CGFloat = 0) -> Self
+    {
+        switch relation {
+        case .equal:
+            rightAnchor.constraint(equalTo: anchor, constant: constant).isActive = true
+        case .greaterThanOrEqual:
+            rightAnchor.constraint(greaterThanOrEqualTo: anchor, constant: constant).isActive = true
+        case .lessThanOrEqual:
+            rightAnchor.constraint(lessThanOrEqualTo: anchor, constant: constant).isActive = true
+        }
+        
         return self
     }
     
@@ -910,6 +964,33 @@ extension UIView {
     }
     
     /**
+     Constrain the top anchor to another anchor.
+     
+     - parameter anchor: The support by which to constrain self.
+     - parameter relation: The layout relation of self (optional, defaults to .Equal).
+     - parameter constant: The constant to use for the constraint (optional, defaults to 0).
+     
+     - returns: self
+     */
+    @available(iOS 9.0, *)
+    @discardableResult
+    public func pinTopAnchor(to anchor: NSLayoutYAxisAnchor,
+                               relation: NSLayoutRelation = .equal,
+                               constant: CGFloat = 0) -> Self
+    {
+        switch relation {
+        case .equal:
+            topAnchor.constraint(equalTo: anchor, constant: constant).isActive = true
+        case .greaterThanOrEqual:
+            topAnchor.constraint(greaterThanOrEqualTo: anchor, constant: constant).isActive = true
+        case .lessThanOrEqual:
+            topAnchor.constraint(lessThanOrEqualTo: anchor, constant: constant).isActive = true
+        }
+        
+        return self
+    }
+    
+    /**
      Constrain the bottom constraint of the current view.
      
      - parameter support: The support by which to constrain self.
@@ -931,6 +1012,33 @@ extension UIView {
                                           atPriority priority: UILayoutPriority = UILayoutPriority.required) -> Self
     {
         constrain(.bottom, relation, toSupport: support, attribute, times: multiplier, plus: constant, atPriority: priority)
+        return self
+    }
+    
+    /**
+     Constrain the bottom anchor to another anchor.
+     
+     - parameter anchor: The support by which to constrain self.
+     - parameter relation: The layout relation of self (optional, defaults to .Equal).
+     - parameter constant: The constant to use for the constraint (optional, defaults to 0).
+     
+     - returns: self
+     */
+    @available(iOS 9.0, *)
+    @discardableResult
+    public func pinBottomAnchor(to anchor: NSLayoutYAxisAnchor,
+                             relation: NSLayoutRelation = .equal,
+                             constant: CGFloat = 0) -> Self
+    {
+        switch relation {
+        case .equal:
+            bottomAnchor.constraint(equalTo: anchor, constant: constant).isActive = true
+        case .greaterThanOrEqual:
+            bottomAnchor.constraint(greaterThanOrEqualTo: anchor, constant: constant).isActive = true
+        case .lessThanOrEqual:
+            bottomAnchor.constraint(lessThanOrEqualTo: anchor, constant: constant).isActive = true
+        }
+        
         return self
     }
     
