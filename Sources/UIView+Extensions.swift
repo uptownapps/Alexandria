@@ -384,6 +384,28 @@ extension UIView {
     }
     
     /**
+     Constrain the leftAnchor, rightAnchor, topAnchor, and bottomAnchor of self to its superview's safeAreaLayoutGuide's respective anchors, with optional insets.
+     
+     - parameter insets: The insets for each edge (optional, defaults to 0).
+     
+     - returns: self
+     */
+    @available(iOS 11.0, *)
+    @discardableResult
+    public func pinToSuperviewSafeArea(insets: UIEdgeInsets = .zero) -> Self {
+        guard let superview = superview else { fatalError("Unable to add constraints, because the view has no superview") }
+        
+        superview.addConstraints([
+            leftAnchor  .constraint(equalTo: superview.safeAreaLayoutGuide.leftAnchor,   constant: insets.left),
+            rightAnchor .constraint(equalTo: superview.safeAreaLayoutGuide.rightAnchor,  constant: -insets.right),
+            topAnchor   .constraint(equalTo: superview.safeAreaLayoutGuide.topAnchor,    constant: insets.top),
+            bottomAnchor.constraint(equalTo: superview.safeAreaLayoutGuide.bottomAnchor, constant: -insets.bottom),
+        ])
+        
+        return self
+    }
+    
+    /**
      Constrain the width of the current view.
      
      - parameter value: The width value.
