@@ -395,6 +395,8 @@ extension UIView {
     public func pinToSuperviewSafeArea(insets: UIEdgeInsets = .zero) -> Self {
         guard let superview = superview else { fatalError("Unable to add constraints, because the view has no superview") }
         
+        translatesAutoresizingMaskIntoConstraints = false
+        
         superview.addConstraints([
             leftAnchor  .constraint(equalTo: superview.safeAreaLayoutGuide.leftAnchor,   constant: insets.left),
             rightAnchor .constraint(equalTo: superview.safeAreaLayoutGuide.rightAnchor,  constant: -insets.right),
@@ -874,6 +876,8 @@ extension UIView {
                               relation: NSLayoutRelation = .equal,
                               constant: CGFloat = 0) -> Self
     {
+        translatesAutoresizingMaskIntoConstraints = false
+        
         switch relation {
         case .equal:
             leftAnchor.constraint(equalTo: anchor, constant: constant).isActive = true
@@ -926,6 +930,8 @@ extension UIView {
                               relation: NSLayoutRelation = .equal,
                               constant: CGFloat = 0) -> Self
     {
+        translatesAutoresizingMaskIntoConstraints = false
+        
         switch relation {
         case .equal:
             rightAnchor.constraint(equalTo: anchor, constant: constant).isActive = true
@@ -978,6 +984,8 @@ extension UIView {
                                relation: NSLayoutRelation = .equal,
                                constant: CGFloat = 0) -> Self
     {
+        translatesAutoresizingMaskIntoConstraints = false
+        
         switch relation {
         case .equal:
             topAnchor.constraint(equalTo: anchor, constant: constant).isActive = true
@@ -1030,6 +1038,8 @@ extension UIView {
                              relation: NSLayoutRelation = .equal,
                              constant: CGFloat = 0) -> Self
     {
+        translatesAutoresizingMaskIntoConstraints = false
+        
         switch relation {
         case .equal:
             bottomAnchor.constraint(equalTo: anchor, constant: constant).isActive = true
