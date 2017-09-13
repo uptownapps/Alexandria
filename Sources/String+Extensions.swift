@@ -312,8 +312,10 @@ extension String {
      - returns: The NSRange converted from the input. This will always succeed.
      */
     public func nsRange(from range: Range<String.Index>) -> NSRange {
-        let from = String.UTF16View.Index(range.lowerBound, within: utf16)
-        let to = String.UTF16View.Index(range.upperBound, within: utf16)
+        guard let from = String.UTF16View.Index(range.lowerBound, within: utf16),
+              let to = String.UTF16View.Index(range.upperBound, within: utf16)
+        else { return NSRange(location: 0, length: 0) }
+        
         return NSRange(location: utf16.distance(from: utf16.startIndex, to: from), length: utf16.distance(from: from, to: to))
     }
 
